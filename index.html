@@ -1,0 +1,2466 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="icon" href="https://static.jianshukeji.com/highcharts/images/favicon.ico">
+    <script src="js/jquery-3.1.0.js"></script>
+    <script src="js/highcharts.js"></script>
+    <script src="js/chartjs/1more.js"></script>
+    <script src="js/chartjs/2gauge.js"></script>
+    <script src="js/chartjs/4CN.js"></script>
+    <script src="js/chartjs/3unica.js"></script>
+    <script src="js/chartjs/5data.js"></script>
+	<script src="js/chartjs/6drilldown.js"></script>
+    <script src="js/chartjs/createFnobj.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+<!--标题-->
+    <div class="header">
+        <div class="logobox">
+                <img class="logoimg" src="img/logo.png" alt=""/>
+        </div>
+        <div class="titlebox">
+			2017年上海国际汽车工业会展中心网络保障
+        </div>
+        <div id="show"></div>
+    </div>
+    
+    
+<!--正文-->
+   <div class="navbox">
+   		<!--左边-->
+   		<div class="nleft">
+   			<!--左上角面积图表-->
+   			<div class="leftonebox">
+   				<!--<div id="leftonetu" class="leftonetu"></div>-->
+   			</div>
+   			<!--横柱形图-->
+   			<!--<div class="leftonebox">-->
+   				<!--&lt;!&ndash;<div id="leftwotu" class="leftonetu"></div>&ndash;&gt;-->
+   			<!--</div>-->
+			<div class="leftonebox">
+				<!--<div id="lefthreetu" class="leftonetu"></div>-->
+			</div>
+   			<!--柱形图-->
+   			<div class="leftonebox">
+   				<!--<div id="lefthreetu" class="leftonetu"></div>-->
+   			</div>
+   		</div>
+   		<!--中间-->
+   		<div class="ncenter">
+   			<!--中间上部仪表盘-->
+   			<div class="ncttopbox">
+   				<div class="instbox">
+   					<div id="inst1" class="inst"></div>
+   					<div id="inst2" class="inst"></div>
+   					<div id="inst3" class="inst"></div>
+   				</div>
+   				<div class="usernumbox">
+   					<span>总用户数</span>
+   					<span id="usernum">111111</span>
+   				</div>
+   			</div>
+			<!--中间下部场馆图-->
+			 <!--一级呼吸灯-->
+			     <div class="place1">
+					 <div class="spinner">
+						<div class="double-bounce1"></div>
+						<div class="double-bounce2"></div>
+					 </div>
+					 <div class="spinner2">
+						<div class="double-bounce3">
+							<img src="img/four.png" alt="">
+						</div>
+					 </div>
+			     </div>
+			<!--二级呼吸灯-->
+				 <div class="place2">
+					 <div class="floor onefloor">
+						 <div style="height:auto;">一楼</div>
+						 <div class="top">
+							 <div class="clickstadium">
+								 <img src="img/icon/西厅.png" alt="">
+								 <span>西厅</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div class="clickstadium">
+								 <img src="img/icon/4.1H.png" alt="">
+								 <span>4.1H</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div class="clickstadium">
+								 <img src="img/icon/3H.png" alt="">
+								 <span>3H</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div class="clickstadium">
+								 <img src="img/icon/北厅.png" alt="">
+								 <span>北厅</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+						 </div>
+						 <div class="center">
+							 <div class="left">
+								 <div class="clickstadium">
+									 <img src="img/icon/5.1H.png" alt="">
+									 <span>5.1H</span>
+									 <div class="spinner spinnertwo">
+										 <div class="double-bounce1"></div>
+										 <div class="double-bounce2"></div>
+									 </div>
+								 </div>
+								 <div class="clickstadium">
+									 <img src="img/icon/6.1H.png" alt="">
+									 <span>6.1H</span>
+									 <div class="spinner spinnertwo">
+										 <div class="double-bounce1"></div>
+										 <div class="double-bounce2"></div>
+									 </div>
+								 </div>
+							 </div>
+							 <div class="right">
+								 <div class="clickstadium">
+									 <img src="img/icon/2H.png" alt="">
+									 <span>2H</span>
+									 <div class="spinner spinnertwo">
+										 <div class="double-bounce1"></div>
+										 <div class="double-bounce2"></div>
+									 </div>
+								 </div>
+								 <div class="clickstadium">
+									 <img src="img/icon/1H.png" alt="">
+									 <span>1H</span>
+									 <div class="spinner spinnertwo">
+										 <div class="double-bounce1"></div>
+										 <div class="double-bounce2"></div>
+									 </div>
+								 </div>
+							 </div>
+						 </div>
+						 <div class="bottom">
+							 <div></div>
+							 <div class="clickstadium">
+								 <img src="img/icon/7.1H.png" alt="">
+								 <span>7.1H</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div class="clickstadium">
+								 <img src="img/icon/8.1H.png" alt="">
+								 <span>8.1</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div class="clickstadium">
+								 <img src="img/icon/东厅.png" alt="">
+								 <span>东厅</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+						 </div>
+					 </div>
+					 <div class="floor twofloor">
+						 <div style="height:auto;">二楼</div>
+						 <div class="top">
+							 <div></div>
+							 <div class="clickstadium">
+								 <img src="img/icon/2-4.1H.png" alt="">
+								 <span>4.2H</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div></div>
+							 <div></div>
+						 </div>
+						 <div class="center">
+							 <div class="left">
+								 <div class="clickstadium">
+									 <img src="img/icon/2-5.1H.png" alt="">
+									 <span>5.2H</span>
+									 <div class="spinner spinnertwo">
+										 <div class="double-bounce1"></div>
+										 <div class="double-bounce2"></div>
+									 </div>
+								 </div>
+								 <div class="clickstadium">
+									 <img src="img/icon/2-6.1H.png" alt="">
+									 <span>6.2H</span>
+									 <div class="spinner spinnertwo">
+										 <div class="double-bounce1"></div>
+										 <div class="double-bounce2"></div>
+									 </div>
+								 </div>
+							 </div>
+							 <div class="right"></div>
+						 </div>
+						 <div class="bottom">
+							 <div></div>
+							 <div class="clickstadium">
+								 <img src="img/icon/2-7.1H.png" alt="">
+								 <span>7.2H</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div class="clickstadium">
+								 <img src="img/icon/2-8.1H.png" alt="">
+								 <span>8.2</span>
+								 <div class="spinner spinnertwo">
+									 <div class="double-bounce1"></div>
+									 <div class="double-bounce2"></div>
+								 </div>
+							 </div>
+							 <div></div>
+						 </div>
+					 </div>
+				 </div>
+   		</div>
+   		<!--右边-->
+   		<div class="nright">
+   			<!--右边上部分-->
+   			<div class="nrightwarptopbox">
+	   			<div class="nrighttop">
+	   				
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">1H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">2H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">3H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">4H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">5H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">6H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">7H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">8H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">9H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">10H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">11H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">12H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">13H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">14H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">15H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			<div class="righttoplist">
+		   				<div class="rtitlebox">
+		   					<span class="tttext">16H场馆</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbodybox">
+		   					<div class="rbodyrollbox">
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>利用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>流量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>话务量</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>接通率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>掉话率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>可用率</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+	   			</div>
+   			</div>
+   			
+   			<!--右边下部分-->
+   			<div class="nrightwarpbottombox">  <!--240px-->
+   				<div class="nrightbottomroll">  <!--720px-->
+   					
+   					<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">2G接通率</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbottombodybox"> <!--90px-->
+		   					<div class="rbbottomodyrollbox"> <!--360px-->
+		   						
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top1</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top2</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top3</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top4</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top5</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top6</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top7</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top8</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top9</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top10</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+		   			<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">2G掉话率</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbottombodybox"> <!--90px-->
+		   					<div class="rbbottomodyrollbox"> <!--360px-->
+		   						
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top1</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top2</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top3</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top4</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top5</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top6</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top7</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top8</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top9</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top10</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+		   			<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">3G接通率</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbottombodybox"> <!--90px-->
+		   					<div class="rbbottomodyrollbox"> <!--360px-->
+		   						
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top1</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top2</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top3</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top4</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top5</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top6</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top7</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top8</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top9</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top10</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+		   			<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">3G掉话率</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbottombodybox"> <!--90px-->
+		   					<div class="rbbottomodyrollbox"> <!--360px-->
+		   						
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top1</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top2</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top3</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top4</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top5</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top6</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top7</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top8</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top9</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top10</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+		   			<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">4G接通率</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbottombodybox"> <!--90px-->
+		   					<div class="rbbottomodyrollbox"> <!--360px-->
+		   						
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top1</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top2</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top3</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top4</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top5</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top6</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top7</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top8</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top9</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top10</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+		   			
+		   			
+		   			<div class="rightbottomlist"> <!--120px,总共6个-->
+		   				<div class="rbottomtitlebox">
+		   					<span class="tttext">4G掉话率</span>
+		   					<span>2G</span>
+		   					<span>3G</span>
+		   					<span>4G</span>
+		   				</div>
+		   				<div class="rbottombodybox"> <!--90px-->
+		   					<div class="rbbottomodyrollbox"> <!--360px-->
+		   						
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top1</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top2</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top3</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top4</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top5</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top6</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top7</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top8</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top9</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+			   					<div class="rbodylist">
+			   						<div class="tbd1">
+			   							<span></span>
+			   							<span>Top10</span>
+			   						</div>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   						<span class="rblspan">数值</span>
+			   					</div>
+			   					
+		   					</div>
+		   				</div>
+		   			</div>
+   					
+   				</div>
+   			</div>
+   		
+   			<div style="display: none;" class="nrCutbox">
+   				<div class="nrCut">
+   					<div class="Cuttextbox">
+   						<div class="cuttitlebox">
+   							<span id="cuttitle">name</span>
+   							<span>2G</span>
+   							<span>3G</span>
+   							<span>4G</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>利用率</span>
+   							</div>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>流量</span>
+   							</div>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>话务量</span>
+   							</div>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>接通率</span>
+   							</div>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>掉话率</span>
+   							</div>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   						</div>
+   						
+   						<div class="cutone">
+   							<div class="cutongstyle">
+   								<span></span>
+   								<span>可用率</span>
+   							</div>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   							<span class="cutonespan">数值</span>
+   						</div>
+   						
+   					</div>
+   				</div>
+   				<button class="getbackrollbtn">返回</button>
+   			</div>
+   		</div>
+   </div>
+
+    <style>
+    	
+    </style>
+</body>
+<script type="text/javascript">
+	
+	//添加效果
+	$(function(){
+		//右边部分添加的动画效果
+		var rollnum=0,rollbodynum=0,bottomrollnum=0,rbottombodyroll=0;
+		function nrighttoprollFn(){
+			rollnum+=240;
+			if(rollnum == 1920){
+				rollnum=0
+			}
+			if(rollnum==0){
+				$('.nrighttop').css({'transition':'none','marginTop':'0'})
+			}else{
+				$('.nrighttop').css({'marginTop':-rollnum+'px','transition':'margin-top 1s'})
+			}
+		}
+		setInterval(nrighttoprollFn,10000)
+		function rbodyrollboxFn(){
+			rollbodynum+=90;
+			if(rollbodynum == 180){
+				rollbodynum=0
+			}
+			if(rollbodynum==0){
+				$('.rbodyrollbox').css({'transition':'none','marginTop':'0'})
+			}else{
+				$('.rbodyrollbox').css({'marginTop':-rollbodynum+'px','transition':'margin-top 1s'})
+			}
+		}
+		setInterval(rbodyrollboxFn,5000)
+		function nrightbottomrollFn(){
+			bottomrollnum+=240;
+			if(bottomrollnum == 720){
+				bottomrollnum=0
+			}
+			if(bottomrollnum==0){
+				$('.nrightbottomroll').css({'transition':'none','marginTop':'0'})
+			}else{
+				$('.nrightbottomroll').css({'marginTop':-bottomrollnum+'px','transition':'margin-top 1s'})
+			}
+		}
+		setInterval(nrightbottomrollFn,10000)
+		function rbottombodyboxFn(){
+			rbottombodyroll+=90;
+			if(rbottombodyroll == 360){
+				rbottombodyroll=0
+			}
+			if(rbottombodyroll==0){
+				$('.rbbottomodyrollbox').css({'transition':'none','marginTop':'0'})
+			}else{
+				$('.rbbottomodyrollbox').css({'marginTop':-rbottombodyroll+'px','transition':'margin-top 1s'})
+			}
+		}
+		setInterval(rbottombodyboxFn,2500)
+		//添加效果完毕
+		
+		
+        //点击不同场馆
+        $('.clickstadium').on('click',function(){
+        	var index=$('.clickstadium').index($(this)),stadiumname;
+        	var stadiumarr=["西厅","4.1H","3H","北厅","5.1H","6.1H","2H","1H","7.1H","8.1H","东厅","4.2H","5.2H","6.2H","7.2h","8.2H"]
+        	alert("您点击了"+"  "+stadiumarr[index]+'\n'+"右边此时展示的标题是"+stadiumarr[index])
+        	$('.nrightwarptopbox').fadeOut();
+        	$('.nrightwarpbottombox').fadeOut();
+        	$('.nrCutbox').fadeIn();
+        	$('#cuttitle').html(stadiumarr[index])
+        })
+        
+        $('.getbackrollbtn').on('click',function(){
+        	$('.nrightwarptopbox').fadeIn();
+        	$('.nrightwarpbottombox').fadeIn();
+        	$('.nrCutbox').fadeOut();
+          	$(".place2").fadeOut();
+            $(".place1").fadeIn();
+        })
+	})
+	
+	
+	
+	
+	$(function(){
+		var cutnum=0;
+		//点击切换左上图为柱状图
+		$('.leftonebox').eq(0).on('click',function(){
+			if(cutnum%2 == 0){
+				createFnobj.cutleftytop(2,lefttopcutarr)
+			}else{
+				createFnobj.Gliyonglv(2,aaa)
+			}
+			cutnum++
+		})
+
+    setInterval(cutG2G3G4,5000)    //每隔5s重新取一次数据
+
+
+//左上面积图表
+		//网络可用率展示图表_左上图[数据]
+		var aaa=[7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6, 9.6]
+		createFnobj.Gliyonglv(2,aaa)
+		var lefttopcutarr=[49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4];
+
+
+//定时器刷新函数
+		var Anum=2;Abool=true;
+        function cutG2G3G4(){
+        	if(Abool){
+        		Anum++
+        		Abool=false
+        	}
+            //每隔5秒请求一次数据，根据数据创建变量，并传入参数，执行不同函数
+            //4G没有话务量，根据请求返回的参数，判断如果为4G，不执行Huacloumn函数，并删除#lefthreetu节点，同时让
+            //#leftonetu、#leftwotu节点高度撑满父级
+            createFnobj.Gliyonglv(Anum,aaa)
+            createFnobj.FlowHcolumn(Anum,Hcoluarr1,Hcoluarr2)
+            createFnobj.Huacloumn(Anum,Huacolarr1,Huacolarr2)
+            createFnobj.createinst(80,100,120)
+            Anum++
+            if(Anum == 5){
+            	Anum=2
+            }
+        }
+//================================================================================================================
+		//流量横向柱形图
+	    //参数id为容器，num为2、3、4,arr1为传入数据1,arr2为传入数据2
+	    var Hcoluarr1= ['阶段1', '阶段2', '阶段3','阶段4'],
+	    	Hcoluarr2= [{ name:'流量',
+		            data: [5, 3, 4, 4]
+		        }];
+	    createFnobj.FlowHcolumn(2,Hcoluarr1,Hcoluarr2)
+	  	
+	  
+//=======================================================================================================
+		//话务量柱形图
+	    //参数id为容器id，num为2、3、4,arr1为传入数据1,arr2为传入数据2	
+	    var Huacolarr1=[{
+			            name: '话务量',
+			            colorByPoint: true,
+			            data: [{
+			                name: 'name1',
+			                y: 56.33,
+			                drilldown: 'name1'
+			            }, {
+			                name: 'name2',
+			                y: 24.03,
+			                drilldown: 'name2'
+			            }, {
+			                name: 'name3',
+			                y: 10.38,
+			                drilldown: 'name3'
+			            }, {
+			                name: 'name4',
+			                y: 4.77,
+			                drilldown: 'name4'
+			            }, {
+			                name: 'name5',
+			                y: 0.91,
+			                drilldown: 'name5'
+			            }, {
+			                name: 'name6',
+			                y: 0.5,
+			                drilldown: 'name6'
+			            }]
+			        }];
+		var Huacolarr2= [{
+                name: 'name1',
+                id: 'name1',
+                data: [
+                    [
+                        'v11.0',
+                        24.13
+                    ],
+                    [
+                        'v8.0',
+                        17.2
+                    ],
+                    [
+                        'v9.0',
+                        8.11
+                    ],
+                    [
+                        'v10.0',
+                        5.33
+                    ],
+                    [
+                        'v6.0',
+                        1.06
+                    ],
+                    [
+                        'v7.0',
+                        0.5
+                    ]
+                ]
+            }, {
+                name: 'name2',
+                id: 'name2',
+                data: [
+                    [
+                        'v40.0',
+                        5
+                    ],
+                    [
+                        'v41.0',
+                        4.32
+                    ],
+                    [
+                        'v42.0',
+                        3.68
+                    ],
+                    [
+                        'v39.0',
+                        2.96
+                    ],
+                    [
+                        'v36.0',
+                        2.53
+                    ],
+                    [
+                        'v43.0',
+                        1.45
+                    ],
+                    [
+                        'v31.0',
+                        1.24
+                    ],
+                    [
+                        'v35.0',
+                        0.85
+                    ],
+                    [
+                        'v38.0',
+                        0.6
+                    ],
+                    [
+                        'v32.0',
+                        0.55
+                    ],
+                    [
+                        'v37.0',
+                        0.38
+                    ],
+                    [
+                        'v33.0',
+                        0.19
+                    ],
+                    [
+                        'v34.0',
+                        0.14
+                    ],
+                    [
+                        'v30.0',
+                        0.14
+                    ]
+                ]
+            }, {
+                name: 'name3',
+                id: 'name3',
+                data: [
+                    [
+                        'v35',
+                        2.76
+                    ],
+                    [
+                        'v36',
+                        2.32
+                    ],
+                    [
+                        'v37',
+                        2.31
+                    ],
+                    [
+                        'v34',
+                        1.27
+                    ],
+                    [
+                        'v38',
+                        1.02
+                    ],
+                    [
+                        'v31',
+                        0.33
+                    ],
+                    [
+                        'v33',
+                        0.22
+                    ],
+                    [
+                        'v32',
+                        0.15
+                    ]
+                ]
+            }, {
+                name: 'name4',
+                id: 'name4',
+                data: [
+                    [
+                        'v8.0',
+                        2.56
+                    ],
+                    [
+                        'v7.1',
+                        0.77
+                    ],
+                    [
+                        'v5.1',
+                        0.42
+                    ],
+                    [
+                        'v5.0',
+                        0.3
+                    ],
+                    [
+                        'v6.1',
+                        0.29
+                    ],
+                    [
+                        'v7.0',
+                        0.26
+                    ],
+                    [
+                        'v6.2',
+                        0.17
+                    ]
+                ]
+            }, {
+                name: 'name5',
+                id: 'name5',
+                data: [
+                    [
+                        'v12.x',
+                        0.34
+                    ],
+                    [
+                        'v28',
+                        0.24
+                    ],
+                    [
+                        'v27',
+                        0.17
+                    ],
+                    [
+                        'v29',
+                        0.16
+                    ]
+                ]
+            }]
+		createFnobj.Huacloumn(2,Huacolarr1,Huacolarr2)
+	  	//中部仪表图
+	  	//参数num1为仪表盘1初始化数据，参数num2为仪表盘1初始化数据，参数num3为仪表盘1初始化数据
+	  	//根据数据范围设置仪表盘单位
+	  	createFnobj.createinst(80,100,120)
+    });
+
+    // 场馆一二级呼吸灯切换
+    $(".place1").on('click',function(){
+        $(".place1").fadeOut();
+        $(".place2").fadeIn();
+    });
+//  $(".place2").on('click',function(){
+//      $(".place2").fadeOut();
+//      $(".place1").fadeIn();
+//  });
+    
+    	
+  
+</script>
+</html>

@@ -1,0 +1,5 @@
+1。chartjs/createFnobj.js
+       面向对象的方法：
+       (1)左上角的折线图：
+           createFnobj.Gliyonglv=function (num,numarr){};  //调用时可传入参数：num可传入1，2，3表示2G,3G,4G;
+                                                                             numarr表示传入的 具体数据值

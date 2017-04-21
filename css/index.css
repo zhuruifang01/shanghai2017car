@@ -1,0 +1,567 @@
+/*头部*/
+body,html{
+    width:100%;
+    margin:0;padding:0;
+    color:#fff;
+    font-family:"微软雅黑";
+    background:black;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style:none;
+}
+.header{
+    width:100%;
+    height:88px;
+    border-bottom: 2px solid #353535;
+	position:relative;
+}
+.logobox{
+    width:auto;
+    height:88px;
+
+    box-sizing: border-box;
+    float: left;
+	padding-left:60px;
+}
+.logoimg{
+	width:auto;
+	height:100%;
+	float: left;
+    display: block;
+}
+.logobox div{
+	width: 2px;
+	height: 30px;
+	margin:0 auto;
+	float: left;
+	background: white;
+}
+
+.header .titlebox{
+    width:auto;
+    height:88px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 88px;
+    color: white;
+    float: left;
+	margin:0 auto;
+	position:absolute;
+	left:0;right:0;
+	margin:auto;
+	box-sizing:border-box;
+	padding-left:40px;
+}
+
+.header #show{
+	float: right;
+    width:20%;
+    height:88px;
+    font-size:20px;
+    color:#fff;
+    font-weight:bold;
+    text-align: center;
+    line-height: 88px;
+}
+
+/*正文*/
+.navbox{
+		width: 100%;
+		height:86% ;
+		box-sizing: border-box;
+		position: relative;
+	}
+	.nleft{
+		width: 30%;
+		height: 100%;
+		float: left;
+	}
+	.ncenter{
+		width: 50%;
+		height: 100%;
+		box-sizing: border-box;
+		border-left: 2px solid #353535;
+		border-right: 2px solid #353535;
+		float: left;
+	}
+	.nright{
+		width: 20%;
+		height: 100%;
+		/*float: left;*/
+		padding: 10px;
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		left: 80%;
+	}
+	
+	/*左上折线图*/
+	.leftonebox{
+		width: 100%;
+		height: 33%;
+	}
+	.leftonetu{
+		width: 100%;
+		height: 100%;
+	}
+
+
+    	
+		
+/*中部内容*/
+        .ncttopbox{
+    		width: 100%;
+    		height: 160px;
+    		position: relative;
+    	}
+    	.instbox{
+    		width: 70%;
+    		height: 120px;
+    		position: absolute;
+    		top: 20px;
+    		left: 25%;
+    	}
+    	.inst{
+    		width: 33%;
+    		height: 120px;
+    		float: left;
+    	}
+    	.usernumbox{
+    		width: 20%;
+    		height: 60px;
+    		position: absolute;
+    		left: 2%;
+    		top: 20px;
+    	}
+    	.usernumbox span{
+    		width: 100%;
+    		line-height: 30px;
+    		color: white;
+    		display: block;
+    		font-size: 14px;
+    		text-align: center;
+    	}
+    	#usernum{
+    		font-size: 18px;
+    		color: #f6f938;
+    	}
+/*中间下部分场馆图*/
+      /*场馆一级呼吸灯*/
+        .place1{
+			width:100%;
+			height:77.5%;
+			background-image:url("../img/bg.png");
+			position:relative;
+		}
+             /*中间*/
+            .spinner {
+				width: 70px;
+				height: 70px;
+				position:absolute;
+				left:0;right:0;
+				margin:auto;
+				top:200px;
+				z-index:999;
+			}
+
+			.double-bounce1, .double-bounce2 {
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				background-color:lightgreen;
+				border:3px solid #e8eb93;
+				opacity: 0.7;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-animation: bounce 5.0s infinite ease-in-out;
+				animation: bounce 2.0s infinite ease-in-out;
+			}
+
+			.double-bounce2 {
+				-webkit-animation-delay: -1.0s;
+				animation-delay: -1.0s;
+			}
+
+			@-webkit-keyframes bounce {
+				0%, 100% { -webkit-transform: scale(0.0) }
+				50% { -webkit-transform: scale(1.0) }
+			}
+
+			@keyframes bounce {
+				0%, 100% {
+					transform: scale(0.0);
+					-webkit-transform: scale(0.0);
+				} 50% {
+					  transform: scale(1.0);
+					  -webkit-transform: scale(1.0);
+				  }
+			}
+            /*外部图*/
+			.spinner2{
+				width:438px;
+				height:325px;
+				position:absolute;
+				left:21%;
+				top:105px;
+			}
+
+			.double-bounce3{
+				width: 100%;
+				height: 100%;
+				border-radius: 50%;
+				/*background-image:url("jingao.png");*/
+				/*border:3px solid #e8eb93;*/
+				opacity: 0.6;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-animation: bbounce 5.0s infinite ease-in-out;
+				animation: bbounce 2.0s infinite ease-in-out;
+				overflow:hidden;
+			}
+			.double-bounce3 img{
+				width:100%;
+				height:100%;
+			}
+			.double-bounce3 {
+				-webkit-animation-delay: -1.0s;
+				animation-delay: -1.0s;
+			}
+
+			@-webkit-keyframes bbounce {
+				0%, 100% { -webkit-transform: scale(1.0) }
+				50% { -webkit-transform: scale(1.05) }
+			}
+			@keyframes bbounce {
+				0%, 100% {
+					transform: scale(1.0);
+					-webkit-transform: scale(1.0);
+				} 50% {
+					  transform: scale(1.05);
+					  -webkit-transform: scale(1.05);
+				  }
+			}
+		/*场馆二级呼吸灯*/
+            .place2{
+				display:none;
+			}
+            .place2 .floor{
+				width:48%;
+				height:500px;
+				box-sizing:border-box;
+				float:left;
+			}
+            .place2 .twofloor{
+				float:right;
+			}
+            .place2 .floor div{
+				width:100%;
+				height:33.333%;
+				text-align:center;
+				position:relative;
+			}
+            .place2 .floor div span{
+				position:absolute;
+				left:0;right:0;
+				margin:auto;
+				top:30%;
+
+			}
+            .place2 .floor .top div,.place2 .floor .bottom div{
+				width:25%;
+				height:80%;
+				margin-top:10%;
+				float:left;
+			}
+            .place2 .floor div div img{
+				width:100%;
+				height:100%;
+			}
+			.place2 .floor .center .left,.place2 .floor .center .right{
+				width:50%;
+				height:100%;
+				float:left;
+				box-sizing:border-box;
+			}
+            .place2 .floor .center .left div,.place2 .floor .center .right div{
+				width:90%;
+				height:40%;
+				margin-top:5%;
+				box-sizing:border-box;
+			}
+            .place2 .floor .center .right div{
+				margin-left:7%;
+			}
+            .place2 .floor .bottom div{
+				margin-top:0;
+			}
+
+			.place2 .floor div .spinnertwo {
+				width:25px;
+				height:25px;
+				margin-top:0;
+				position:absolute;
+				left:0;right:0;
+				margin:auto;
+				top:80px;
+				z-index:999;
+			}
+
+			.place2 .floor div .spinnertwo .double-bounce1,.place2 .floor div .spinnertwo .double-bounce2 {
+				width:100%;
+				height:100%;
+				border-radius: 50%;
+				float:none;
+				background-color:lightgreen;
+				border:3px solid #e8eb93;
+				opacity: 0.7;
+				position: absolute;
+				top: 0;
+				left: 0;
+				-webkit-animation: bounce 5.0s infinite ease-in-out;
+				animation: bounce 2.0s infinite ease-in-out;
+				z-index:99999;
+			}
+			.place2 .floor .center .left div .spinnertwo,.place2 .floor .center .right div.spinnertwo{
+				width:25px;height:25px;
+				margin-top:0;
+				position:absolute;
+				left:5px;right:auto;
+				top:20px;
+				z-index:999;
+			}
+			.place2 .floor .center .right div.spinnertwo{
+				position:absolute;
+				right:5px;left:auto;
+			}
+			.place2 .floor .center .left div .spinnertwo .double-bounce1,.place2 .floor .center .left div .spinnertwo .double-bounce2 {
+				width:100%;
+				height:100%;
+			}
+			.spinnertwo .double-bounce2 {
+				-webkit-animation-delay: -1.0s;
+				animation-delay: -1.0s;
+			}
+
+			@-webkit-keyframes bounce {
+				0%, 100% { -webkit-transform: scale(0.0) }
+				50% { -webkit-transform: scale(1.0) }
+			}
+
+			@keyframes bounce {
+				0%, 100% {
+					transform: scale(0.0);
+					-webkit-transform: scale(0.0);
+				} 50% {
+					  transform: scale(1.0);
+					  -webkit-transform: scale(1.0);
+				  }
+			}
+
+
+.highcharts-title{
+	font-size:15px;
+}
+.highcharts-legend-item{
+	display:none;
+}
+
+
+/*右边点击场馆显示内容*/
+    	.nrCutbox{
+    		width: 94%;
+    		height: 100%;
+    		position: absolute;
+    		top: 3%;
+    		left: 3%;
+    	}
+    	.nrCut{
+    		width: 100%;
+    		height: 210px;
+    		background: black;
+    		z-index: 9999;
+    	}
+    	.Cuttextbox{
+    		width: 100%;
+    		height: 210px;
+    	}
+    	.cuttitlebox{
+    		width: 100%;
+    		height: 30px;
+    		background:#333399;
+    	}
+    	.cuttitlebox span{
+    		float: left;
+    		width: 25%;
+    		line-height: 30px;
+    		font-size: 14px;
+    		text-align: center;
+    	}
+    	.cuttitlebox span:first-child{
+    		text-align: left;
+    	}
+    	.cutone{
+    		width: 100%;
+    		height: 30px;
+    	}
+    	.cutongstyle,.cutonespan{
+    		width: 25%;
+    		height: 30px;
+    		float: left;
+    	}
+    	.cutongstyle span:first-child{
+    		float: left;
+    		background:#333399;
+    		width: 10px;
+    		height: 10px;
+    		border-radius: 10px;
+    		margin: 10px 2px;
+    	}
+    	.cutongstyle span:last-child{
+    		float: left;
+    		line-height: 30px;
+    		width: auto;
+    		font-size: 12px;
+    	}
+    	.cutonespan{
+    		line-height: 30px;
+    		font-size: 14px;
+    		text-align: center;
+    	}
+    	.getbackrollbtn{
+    		display: block;
+    		margin: 20px auto;
+    		outline: none;
+    		background: white;
+    		color: #333399;
+    		line-height: 30px;
+    		border: none;
+    		border-radius: 6px;
+    		height: 30px;
+    		width: 140px;
+    	}
+		/*右边上部内容*/
+		.nrightwarptopbox{
+			width: 100%;
+			height: 240px;
+			overflow: hidden;	
+			margin-bottom:30px;
+		}
+		.nrighttop{
+			width: 100%;
+			height: 1920px;
+			margin-top:0px;		
+		}
+    	.righttoplist{
+    		width: 100%;
+    		height: 120px;
+    	} 
+    	.rtitlebox{
+    		width: 100%;
+    		height: 30px;
+    		background: #333399;
+    	}
+    	.rtitlebox span{
+    		width: 25%;
+    		line-height: 30px;
+    		font-size: 14px;
+    		text-align: center;
+    		float: left;
+    	}
+    	.rtitlebox span:first-child{
+    		text-align: left;
+    		float: left;
+    	}
+    	.rbodyrollbox{
+    		width: 100%;
+    		height: 180px;
+    	}
+    	.rbodybox{
+    		width: 100%;
+    		height: 90px;
+    		overflow: hidden;
+    	}
+    	.rbodylist{
+    		width: 100%;
+    		height: 30px;
+    	}
+    	.tbd1{
+    		width: 25%;
+    		height: 30px;
+    		float: left;
+    	}
+    	.tbd1 span:first-child{
+    		float: left;
+    		background:#333399;
+    		width: 10px;
+    		height: 10px;
+    		border-radius: 10px;
+    		margin: 10px 2px;
+    	}
+    	.tbd1 span:last-child{
+    		float: left;
+    		line-height: 30px;
+    		width: auto;
+    		font-size: 12px;
+    	}
+    	.rblspan{
+    		width: 25%;
+    		line-height: 30px;
+    		float: left;
+    		font-size: 12px;
+    		text-align: center;
+    	}
+    	
+    		/*右边下部内容*/
+   				span{
+   					cursor: pointer;
+   				}
+				.nrightwarpbottombox{
+					width: 100%;
+					height: 240px;
+					overflow: hidden;	
+				}
+		    	.nrightbottomroll{
+		    		width: 100%;
+					height: 720px;
+		    	}
+		    	.rightbottomlist{
+   					width: 100%;
+   					height: 120px;
+   				}
+   				.rbottomtitlebox{
+   					width: 100%;
+		    		height: 30px;
+		    		background: #336633;
+   				}
+   				.rbottomtitlebox span{
+		    		width: 25%;
+		    		line-height: 30px;
+		    		font-size: 14px;
+		    		text-align: center;
+		    		float: left;
+		    	}
+		    	.rbottomtitlebox span:first-child{
+		    		text-align: left;
+		    		float: left;
+		    		font-size: 8px;
+		    	}
+		    	.rbottombodybox{
+		    		width: 100%;
+		    		height: 90px;
+		    		overflow: hidden;
+		    	}
+		    	.rbbottomodyrollbox{
+		    		width: 100%;
+    				height: 360px;
+		    	}
